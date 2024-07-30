@@ -8,6 +8,7 @@ body,html{
     height: 100%;
 }
 .container{
+    padding: 20px;
     width: 90%;
     position: absolute;
     top: 10px;
@@ -32,5 +33,26 @@ input{
 button{
     padding: 10px;
     border-radius: 10px;
+    
+}
+ul li{
+list-style-type:none;
+position:relative;
+background-color: white;
+}
+ul{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+ul li.checked{
+    text-decoration: line-through;
+}
+/* <i class="fa-regular fa-square-check"></i>
+<i class="fa-solid fa-square-check"></i> */
+ul li i{
+    position:absolute;
+    top:50%;
+    left: 90%;
+    transform: translateY(-50%);
     
 }
