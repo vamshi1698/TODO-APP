@@ -7,16 +7,25 @@ submit.addEventListener("click",()=>{
         li.innerText = input.value;
         li.innerHTML += '<i class="fa-regular fa-circle-xmark"></i>';
         ul.appendChild(li);
-        input.value = "";
     }
+    saveData();
+    input.value = "";
 }) 
 ul.addEventListener("click",(e)=>{
     if(e.target.tagName ==="I"){
        let parent = e.target.parentElement;
        parent.remove();
+        saveData();
     }
     if(e.target.tagName ==="LI"){
         e.target.classList.toggle("checked");
+        saveData();
     } 
     }
 )
+function saveData(){
+    localStorage.setItem("listItems",ul.innerHTML);
+}
+(function getData(){
+   ul.innerHTML =  localStorage.getItem("listItems");
+})();
