@@ -78,7 +78,7 @@ ul li i{
     height: 100%;
     position:absolute;
     top:50%;
-    right:10px;
+    left: 90%;
     transform: translateY(-50%);
     
 }
