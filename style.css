@@ -41,7 +41,7 @@ ul li i{
 }
 input{
     outline: none;
-    margin: none;
+    margin: 0;
     flex: 1;
     text-align: center;
     padding: 5px  10px;
@@ -78,7 +78,7 @@ ul li i{
     height: 100%;
     position:absolute;
     top:50%;
-    left: 90%;
+    right:10px;
     transform: translateY(-50%);
     
 }
