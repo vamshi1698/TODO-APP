@@ -18,8 +18,9 @@ ul.addEventListener("click",(e)=>{
         saveData();
     }
     if(e.target.tagName ==="LI"){
-        e.target.classList.toggle("checked");
-        saveData();
+        input.value = e.target.innerText;
+        input.focus();
+        e.target.remove();
     } 
     }
 )
